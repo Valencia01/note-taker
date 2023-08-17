@@ -28,7 +28,19 @@ notes.post('/', (req, res) => {
 
 // DELETE Route to erase any notes
 notes.delete('/:id', (req, res) => {
-   
+  const noteId = req.params.id;
+  readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      const result = json.filter((note) => note.id !== noteId);
+      writeToFile('./db/db.json', result);
+    })
+    .catch((error)=>{
+    console.log(error);
+    console.log ('There was a problem getting to the db')
+    });
+ 
+
 });
 
 

@@ -1,10 +1,5 @@
 [
     {
-        "title": "Call the Bank",
-        "text": "The bank needs to be called to schedule an appointment.",
-        "id": "89f9c797-626e-4de6-934a-f187bb537f78"
-    },
-    {
         "title": "Reschedule delivery",
         "text": "Have the driver come later in the day",
         "id": "4c3b4a8e-fdca-4c6d-b7af-b4b4622a969e"
@@ -13,5 +8,10 @@
         "title": "Check in with clients",
         "text": "Make sure everything is all settled",
         "id": "507e1851-fad5-4e45-8cdc-a95b1809373f"
+    },
+    {
+        "title": "Call the bank",
+        "text": "The bank needs to be called to schedule an appointment.",
+        "id": "41f980ef-5af7-4317-967c-6d6fddf9425b"
     }
 ]
